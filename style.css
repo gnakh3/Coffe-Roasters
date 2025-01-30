@@ -27,7 +27,7 @@ body{
     flex-direction: column;
     padding-left: 86px;
     padding-bottom: 167px;
-    background-image: url(./images/Bitmap.svg);
+    background-image: url(./Bitmap.svg);
     border-radius: 10px;
 }
 .page1-text1{
@@ -201,7 +201,7 @@ body{
     padding-left: 85px;
     display: flex;
     flex-direction: column;
-    height: 685px;
+    padding-bottom: 200px;
 }
 .page4-text1{
     width: 255px;
@@ -227,7 +227,6 @@ body{
     flex-direction: row;
     gap: 95px;
     padding-bottom: 64px;
-    height: 355px;
 }
 .page4-box{
     display: flex;
@@ -243,6 +242,7 @@ body{
     line-height: 72px; 
 }
 .page4-box-text1{
+    width: 255px;
     padding-top: 38px;
     padding-bottom: 42px;
     color: #333D4B;
@@ -250,8 +250,6 @@ body{
     font-size: 32px;
     font-weight: 900;
     line-height: 36px; 
-    width: 255px;
-
 }
 .page4-box-text2{
     color: #333D4B;
@@ -260,4 +258,51 @@ body{
     font-weight: 400;
     line-height: 26px;
     width: 285px;
+}
+.footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 85px;
+    padding-right: 85px;
+    height: 120px;
+    background-color:  #2C343E;
+}
+.footer-image{
+    color: #FEFCF7;
+    display: flex;
+    align-items: flex-start;
+    padding-right: 103px;
+}
+.footer-texts{
+    display: flex;
+    width: 282px;
+    justify-content: space-between;
+}
+.footer-text1{
+    color: #83888F;
+    font-family: Barlow;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.footer-text1:hover{
+    color: #FEFCF7;
+}
+.footer-icon{
+    padding-left: 25%;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.logos:hover{
+    fill: #FDD6BA;
+    transition: fill 0.3s ease;
 }
