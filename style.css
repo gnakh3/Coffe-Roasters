@@ -27,7 +27,7 @@ body{
     flex-direction: column;
     padding-left: 86px;
     padding-bottom: 167px;
-    background-image: url(./Bitmap.svg);
+    background-image: url(./images/Bitmap.svg);
     border-radius: 10px;
 }
 .page1-text1{
