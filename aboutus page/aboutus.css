@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100vw;
+    height: 100vh;
+    background: #FEFCF7;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92vw;
+    height: 10vh;
+    margin-top: 20px;
+}
+
+.righttop {
+    height: 15px;
+    width: 285px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.hac {
+    color: #83888F;
+    font-family: Barlow;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    /* 125% */
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+}
+
+.secondpart {
+    width: 92vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.secondpartpc {
+    display: flex;
+    width: 92vw;
+    height: 75vh;
+    background-image: url(Bitmap\ \(1\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+.texton {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 493px;
+    height: 50%;
+    justify-content: center;
+    margin-left: 90px;
+}
+
+.textontop {
+    color: #FEFCF7;
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    margin-bottom: 24px;
+}
+
+.textonbot {
+    color: #FEFCF7;
+    font-family: "Barlow", serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 445px;
+}
+
+.thirdpart {
+    width: 80%;
+    height: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.txt {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.txttop {
+    color: #333D4B;
+    font-family: "Fraunces", serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px;
+}
+
+.txtbot {
+    color: #333D4B;
+    font-family: "Barlow", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    width: 540px;
+    opacity: 0.8;
+    margin-top: 32px;
+}
