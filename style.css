@@ -261,6 +261,14 @@ body {
 .page4-box-text1 {
     width: 255px;
     padding-top: 38px;
+    color: #333D4B;
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 36px;
+}
+.page4-box-text2 {
+    width: 255px;
     padding-bottom: 42px;
     color: #333D4B;
     font-family: "Fraunces", serif;
@@ -269,7 +277,7 @@ body {
     line-height: 36px;
 }
 
-.page4-box-text2 {
+.page4-box-text3 {
     color: #333D4B;
     font-size: 16px;
     font-weight: 400;
@@ -360,7 +368,7 @@ body {
 }
 
 .footer-icon {
-    padding-left: 30%;
+    padding-left: 35%;
     display: flex;
     align-items: flex-end;
     cursor: pointer;
