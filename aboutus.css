@@ -22,21 +22,16 @@ body {
     align-items: center;
     width: 92vw;
     height: 10vh;
-    margin-top: 20px;
 }
 
 .righttop {
-    height: 15px;
-    width: 285px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    gap: 32px;
 }
 
 .hac {
     color: #83888F;
-    font-family: Barlow;
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
@@ -46,19 +41,25 @@ body {
     text-transform: uppercase;
 }
 
+.hac:hover {
+    font-size: 13px;
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease, 0.3s ease;
+}
+
 .secondpart {
     width: 92vw;
     height: 85vh;
     display: flex;
     justify-content: center;
-    margin-top: 20px;
 }
 
 .secondpartpc {
     display: flex;
     width: 92vw;
     height: 75vh;
-    background-image: url(Bitmap\ \(1\).png);
+    background-image: url(./Group\ 7\ \(2\).svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -86,7 +87,6 @@ body {
 
 .textonbot {
     color: #FEFCF7;
-    font-family: "Barlow", serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
@@ -95,7 +95,7 @@ body {
 
 .thirdpart {
     width: 80%;
-    height: 880px;
+    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,7 +127,6 @@ body {
 
 .txtbot {
     color: #333D4B;
-    font-family: "Barlow", serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;

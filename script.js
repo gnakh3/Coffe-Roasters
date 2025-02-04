@@ -1,5 +1,11 @@
-const button2 = document.getElementById('create-bttn2')
-button2.addEventListener('click',function (event) {
-    event.preventDefault();
-    window.location.href = "subscribe%20page/subscribe.html";
-})
+document.getElementById("home").addEventListener("click", function() {
+    window.location.href = "index.html";
+});
+
+document.getElementById("aboutus").addEventListener("click", function() {
+    window.location.href = "aboutus.html";
+});
+
+document.getElementById("createyourplan").addEventListener("click", function() {
+    window.location.href = "subscribe.html";
+});
