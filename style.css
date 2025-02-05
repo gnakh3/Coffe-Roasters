@@ -14,6 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #FEFCF7;
 }
 
 .home-page-header {
@@ -35,13 +36,13 @@ body {
     line-height: 15px;
     letter-spacing: 0.9230769276618958px;
     color: #83888F;
+    transition: color 0.3s ease, 0.3s ease;
 }
 
 .home-page-header-text:hover {
-    font-size: 13px;
+    transform: scale(1.1);
     color: black;
     cursor: pointer;
-    transition: color 0.3s ease, 0.3s ease;
 }
 
 .home-page-page1 {
@@ -55,12 +56,13 @@ body {
     display: flex;
     width: 92vw;
     height: 75vh;
-    background-image: url(./Bitmap.svg);
+    background-image: url(./images/Bitmap.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
     padding-left: 5%;
+    border-radius: 10px;
 }
 
 .home-page-page1-picture-text {
@@ -109,8 +111,76 @@ body {
 
 .home-page-page2 {
     width: 75vw;
-    height: 65vh;
-    background-color: aqua;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 100px;
+}
+
+.home-page-2-text1 {
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 72px;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #83888F;
+    position: relative;
+    width: 1111px;
+}
+
+.home-page-2-text1-decor {
+    width: 1111px;
+    height: 196px;
+    background: linear-gradient(180deg, rgba(254, 252, 247, 0.0001) 0%, #FEFCF7 100%);
+    position: absolute;
+    bottom: -40%;
+}
+
+.for-home-page-2-text1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-page-2-box {
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    gap: 24px;
+}
+
+.home-page-2-box-header {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+    color: #333D4B;
+    font-family: "Fraunces", serif;
+    padding-top: 20px;
+}
+
+.home-page-2-box-info {
+    line-height: 26px;
+    text-align: center;
+    color: #333D4B;    
+}
+
+.for-home-page-boxes {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    z-index: 10;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.home-page-4-box-svg {
+    padding-top: 15.52px;
 }
 
 .page3 {
@@ -267,6 +337,7 @@ body {
     font-weight: 900;
     line-height: 36px;
 }
+
 .page4-box-text2 {
     width: 255px;
     padding-bottom: 42px;
