@@ -39,13 +39,13 @@ body {
     /* 125% */
     letter-spacing: 0.923px;
     text-transform: uppercase;
+    transition: color 0.3s ease, 0.3s ease;
 }
 
 .hac:hover {
-    font-size: 13px;
+    transform: scale(1.1);
     color: black;
     cursor: pointer;
-    transition: color 0.3s ease, 0.3s ease;
 }
 
 .secondpart {
@@ -59,11 +59,12 @@ body {
     display: flex;
     width: 92vw;
     height: 75vh;
-    background-image: url(./Group\ 7\ \(2\).svg);
+    background-image: url(./images/Group\ 7\ \(2\).svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .texton {
@@ -106,6 +107,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10px;
 }
 
 .txt {
