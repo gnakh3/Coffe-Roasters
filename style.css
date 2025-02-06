@@ -182,7 +182,10 @@ body {
 .home-page-4-box-svg {
     padding-top: 15.52px;
 }
+.container{
+    padding-bottom: 50px;
 
+}
 .page3 {
     width: 92vw;
     padding-top: 188px;
