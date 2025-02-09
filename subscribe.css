@@ -251,9 +251,6 @@ body {
 
 .footertxt:hover {
     color: #FEFCF7;
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: color 0.3s ease, 0.3s ease;
 }
 
 .footericon {
@@ -300,10 +297,4 @@ body {
 .logos:hover {
     fill: #FDD6BA;
     transition: fill 0.3s ease;
-}
-
-.headerpic:hover {
-    transform: scale(1.05);
-    transition: color 0.3s ease, 0.3s ease;
-    cursor: pointer;
 }

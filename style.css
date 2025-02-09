@@ -437,9 +437,6 @@ body {
 
 .footer-text1:hover {
     color: #FEFCF7;
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: color 0.3s ease, 0.3s ease;
 }
 
 .footer-icon {
@@ -563,9 +560,8 @@ body {
         padding-left: 0%;
         padding-right: 54px;
     }
-}
 
-.logos:hover {
+  .logos:hover {
     fill: #FDD6BA;
     transition: fill 0.3s ease;
 }
@@ -574,4 +570,5 @@ body {
     transform: scale(1.05);
     transition: color 0.3s ease, 0.3s ease;
     cursor: pointer;
-}
+
+  
