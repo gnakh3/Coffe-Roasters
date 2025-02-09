@@ -437,6 +437,9 @@ body {
 
 .footer-text1:hover {
     color: #FEFCF7;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: color 0.3s ease, 0.3s ease;
 }
 
 .footer-icon {
@@ -484,80 +487,9 @@ body {
     fill: #FDD6BA;
     transition: fill 0.3s ease;
 }
-@media only screen and (max-width: 1024px) {
-    .page3-background {
-        height: 573px;
-        padding-top: 50px;
-    }
-    .page3-boxes{
-        align-items: center;
-        flex-direction: column;
-        gap: 24px;
-        padding-left: 58px;
-        padding-right: 58px;
-        bottom: 200px;
-    }
-    .page3-box{
-        padding-top: 41px;
-        padding-bottom: 41px;
-        flex-direction: row;
-        height: 180px;
-        width: 80%;
-    }
-    .page3-box-texts{
-        padding-left: 24px;
-        display: flex;
-        flex-direction: column;
-    }
-    .page3-box-text1{
-        padding-top: 0px;
-        padding-bottom: 24px;
-        text-align: start;
-    }
-    .page3-box-text2{
-        text-align: start;
-    }
-    .page4{
-        padding-top: 144px;
-        padding-bottom: 144px;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .page4-background{
-        padding-top: 40px;
-        padding-bottom: 62px;
-    }
-    .page4-line{
-        width: 225px;
-        overflow: hidden;
-    }
-    .page4-box{
-        width: 223px;
-    }
-    .page4-box-texts{
-        width: 223px;
-    }
-    .page4-box-text1{
-    font-size: 28px;
-    }
-    .page4-box-text2{
-        font-size: 28px;
-    }
-    .page4-box-text3{
-    width: 223px;
-    font-size: 15px;
-    line-height: 25px; 
-    }
-    .footer{
-        padding-top: 54px;
-        padding-bottom: 54px;
-        flex-direction: column;
-        height: 270px;
-        padding-right: 0%;
-        padding-left: 0%;
-    }
-    .footer-icon{
-        padding-left: 0%;
-        padding-right: 54px;
-    }
+
+.headerpic:hover {
+    transform: scale(1.05);
+    transition: color 0.3s ease, 0.3s ease;
+    cursor: pointer;
 }
