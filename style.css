@@ -184,7 +184,9 @@ body {
 }
 .container{
     padding-bottom: 50px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .page3 {
     width: 92vw;
