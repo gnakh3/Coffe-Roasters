@@ -16,3 +16,14 @@ document.querySelectorAll(".headerpic").forEach(element => {
         window.location.href = "index.html";
     });
 });
+
+
+document.getElementById("createplanbutton").addEventListener("click", function(e) {
+   e.preventDefault();
+    window.location.href = "subscribe.html";
+})
+
+document.getElementById("createplanbutton1").addEventListener("click", function(e) {
+    e.preventDefault();
+     window.location.href = "subscribe.html";
+ })

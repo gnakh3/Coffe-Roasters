@@ -143,3 +143,192 @@ body {
     transition: color 0.3s ease, 0.3s ease;
     cursor: pointer;
 }
+
+.page3cont {
+    height: 70vh;
+    width: 92vw;
+    display: flex;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.aboutus-page3 {
+    background-color: #333D4B;
+    width: 92vw;
+    height: 50vh;
+    border-radius: 10px;
+    position: relative;
+}
+
+.aboutus-page3-text1 {
+    color: #FEFCF7;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: "Fraunces", serif;
+    padding-top: 88px;
+}
+
+.aboutus-page3-text2 {
+    line-height: 26px;
+    color: #FEFCF7;
+    width: 520px;
+    height: 130px;
+    opacity: 80%;
+    padding-top: 32px;
+}
+
+.aboutus-page3-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.aboutus-page3img {
+    position: relative;
+    bottom: 15vh;
+}
+
+
+.page4cont {
+    height: 60vh;
+    width: 92vw;
+    display: flex;
+    align-items: center;
+}
+
+.aboutus-page4 {
+    display: flex;
+    flex-direction: column;
+    height: 38vh;
+    width: 92vw;
+    padding-left: 10vw;
+    justify-content: space-between;
+}
+
+.aboutus-page4boxes {
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+    align-items: center;
+}
+
+.aboutus-page4header {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #83888F;
+    font-family: "Fraunces", serif;
+}
+
+.page4boxheader {
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    font-family: "Fraunces", serif;
+    color: #333D4B;
+    padding-top: 45px;
+    padding-bottom: 24px;
+}
+
+.page4boxtext {
+    line-height: 26px;
+    color: #333D4B;
+}
+
+.footer {
+    width: 92vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 85px;
+    padding-right: 85px;
+    height: 120px;
+    background-color: #2C343E;
+}
+
+.footerimg {
+    color: #FEFCF7;
+    display: flex;
+    align-items: flex-start;
+    padding-right: 7%;
+}
+
+.footertxts {
+    display: flex;
+    width: 282px;
+    justify-content: space-between;
+}
+
+.footertxt {
+    color: #83888F;
+    font-family: Barlow;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.footertxt:hover {
+    color: #FEFCF7;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: color 0.3s ease, 0.3s ease;
+}
+
+.footericon {
+    padding-left: 35%;
+    display: flex;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1470px) {
+    .footericon {
+        padding-left: 40%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .footericon {
+        padding-left: 20%;
+    }
+}
+
+@media only screen and (max-width: 1175px) {
+    .footericon {
+        padding-left: 15%;
+    }
+
+    .footer {
+        padding-right: 6%;
+    }
+}
+
+@media only screen and (max-width: 1135px) {
+    .footericon {
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1065px) {
+    .footericon {
+        padding-left: 8%;
+    }
+}
+
+.logos:hover {
+    fill: #FDD6BA;
+    transition: fill 0.3s ease;
+}
+
+.headerpic:hover {
+    transform: scale(1.05);
+    transition: color 0.3s ease, 0.3s ease;
+    cursor: pointer;
+}
