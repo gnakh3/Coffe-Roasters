@@ -201,7 +201,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 38vh;
-    width: 92vw;
+    width: 1050PX;
     padding-left: 10vw;
     justify-content: space-between;
 }
@@ -209,7 +209,7 @@ body {
 .aboutus-page4boxes {
     display: flex;
     justify-content: space-between;
-    width: 45vw;
+    width: 900px;
     align-items: center;
 }
 
