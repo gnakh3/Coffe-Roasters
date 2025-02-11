@@ -8,6 +8,7 @@ body {
     max-width: 100vw;
     height: 100vh;
     background: #FEFCF7;
+    font-family: "Barlow", serif;
 }
 .subscribe-page{
     display: flex;
