@@ -253,6 +253,7 @@ body {
     width: 350px;
     height: 382px;
 }
+
 .page3-box-text1 {
     padding-top: 56px;
     padding-bottom: 24px;
@@ -331,14 +332,10 @@ body {
     font-weight: 900;
     line-height: 72px;
 }
-.page4-box-texts{
-    display: flex;
-    flex-direction: column;
-    padding-top: 38px;
-    padding-bottom: 42px;
-    width: 255px;
-}
+
 .page4-box-text1 {
+    width: 255px;
+    padding-top: 38px;
     color: #333D4B;
     font-family: "Fraunces", serif;
     font-size: 32px;
@@ -347,6 +344,8 @@ body {
 }
 
 .page4-box-text2 {
+    width: 255px;
+    padding-bottom: 42px;
     color: #333D4B;
     font-family: "Fraunces", serif;
     font-size: 32px;
@@ -445,10 +444,10 @@ body {
     color: #FEFCF7;
     transform: scale(1.1);
     cursor: pointer;
+    transition: color 0.3s ease, 0.3s ease;
 }
 
 .footer-icon {
-    gap: 16px;
     padding-left: 35%;
     display: flex;
     align-items: flex-end;
@@ -569,4 +568,15 @@ body {
         padding-left: 0%;
         padding-right: 54px;
     }
+}
+
+.logos:hover {
+    fill: #FDD6BA;
+    transition: fill 0.3s ease;
+}
+
+.headerpic:hover {
+    transform: scale(1.05);
+    transition: color 0.3s ease, 0.3s ease;
+    cursor: pointer;
 }
