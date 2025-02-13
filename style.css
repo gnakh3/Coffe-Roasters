@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: #FEFCF7;
+    padding-bottom: 72px;
 }
 
 .home-page-header {
@@ -215,7 +216,7 @@ body {
 }
 
 .page3-text2 {
-    width: 540px;
+    max-width: 540px;
     color: #FEFCF7;
     text-align: center;
     font-size: 16px;
@@ -328,10 +329,13 @@ body {
     font-weight: 900;
     line-height: 72px;
 }
-
+.page4-box-texts{
+    display: flex;
+    flex-direction: column;
+}
 .page4-box-text1 {
-    width: 255px;
     padding-top: 38px;
+    padding-bottom: 42px;
     color: #333D4B;
     font-family: "Fraunces", serif;
     font-size: 32px;
@@ -340,7 +344,8 @@ body {
 }
 
 .page4-box-text2 {
-    width: 255px;
+    width: 200px;
+    padding-top: 38px;
     padding-bottom: 42px;
     color: #333D4B;
     font-family: "Fraunces", serif;
@@ -389,7 +394,6 @@ body {
 @media only screen and (max-width: 1100px) {
     .page4 {
         width: 100%;
-        padding-left: 1%;
     }
 
     .page4-boxes {
@@ -544,9 +548,9 @@ body {
     .page4-box-text1{
     font-size: 28px;
     }
-    .page4-box-text2{
+     .page4-box-text2{
         font-size: 28px;
-    }
+    } 
     .page4-box-text3{
     width: 223px;
     font-size: 15px;
@@ -565,7 +569,112 @@ body {
         padding-right: 54px;
     }
 }
+@media only screen and (max-width: 768px) {
+    .page3{
+        padding-top: 120px;
+    }
+    .page3-background {
+        height: 902px;
+        padding-top: 64px;
+    }
+    .page3-text1{
+        font-size: 28px;
+        line-height: 28px; 
+    }
+    .page3-text2{
+        min-width: 279px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .page3-box{
+        flex-direction: column;
+        width: 279px;
+        height: 392px;
+    }
+    .page3-box-texts{
+        padding-top: 56px;
+        padding-left: 0px;
 
+    }
+    .page3-box-text1{
+        text-align: center;
+    }
+    .page3-box-text2{
+        text-align: center;
+        font-size: 16px;
+        line-height: 26px; 
+    }
+    .page4{
+        padding-bottom: 120px;
+        padding-top: 330px;
+        align-items: center;
+    }
+    .page4-text1{
+        text-align: center;
+    }
+    .page4-boxes{
+        flex-direction: column;
+        align-items: center;
+        gap: 56px;
+        padding-bottom: 79px;
+    }
+    .page4-line{
+        width: 80px;
+    }
+    .page4-box{
+        width: 327px;
+        align-items: center;
+        gap: 24px;
+        height: 252px;
+    }
+   
+    .page4-box-text1{
+        width: 327px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: #333D4B;
+    text-align: center;
+    font-family: "Fraunces 9pt";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 32px; 
+    }
+       
+    .page4-box-text2{
+        width: 327px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: #333D4B;
+        text-align: center;
+        font-family: "Fraunces 9pt";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 32px; 
+    }
+
+    .page4-box-text3{
+        width: 327px;
+        text-align: center;
+        font-family: Barlow;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px; 
+    }
+    .footer{
+        height: 347px;
+    }
+    .footer-texts{
+        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-icon{
+        padding-right: 0px;
+    }
+}
 .logos:hover {
     fill: #FDD6BA;
     transition: fill 0.3s ease;
