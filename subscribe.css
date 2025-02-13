@@ -6,16 +6,19 @@
 
 body {
     max-width: 100vw;
-    height: 100vh;
+    height: auto;
     background: #FEFCF7;
     font-family: "Barlow", serif;
+    padding-bottom: 50px;
 }
-.subscribe-page{
+
+.subscribe-page {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
 .pg {
     display: flex;
     flex-direction: column;
@@ -103,15 +106,17 @@ body {
     width: 445px;
     margin-top: 32px;
 }
+
 .pageth {
     width: 90vw;
     padding-right: 85px;
     padding-left: 85px;
     display: flex;
     flex-direction: column;
-    background-color:#333D4B;
+    background-color: #333D4B;
     border-radius: 10px;
 }
+
 .pagethbackground {
     padding-top: 80px;
     padding-bottom: 67px;
@@ -186,7 +191,7 @@ body {
 }
 
 @media only screen and (max-width: 1100px) {
-    .pageth{
+    .pageth {
         width: 100%;
         padding-left: 1%;
     }
@@ -195,21 +200,7 @@ body {
         gap: 3%;
     }
 }
-.gigimixede{
-    width: 80vw;
-    height: 1500px;
-    font-size: 150px;
-    background-color: pink;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90px;
-    margin-bottom: 90px;
-    font-family: "Fraunces", serif;
-    font-weight: 900;
-    color: rgb(241, 211, 240);
-}
+
 .footer {
     width: 92vw;
     padding-top: 50px;
@@ -306,4 +297,177 @@ body {
     transform: scale(1.05);
     transition: color 0.3s ease, 0.3s ease;
     cursor: pointer;
+}
+
+.subscribe-page-left {
+    height: 45vh;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 88px;
+}
+
+.subscribe-page-left-text {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: "Fraunces", serif;
+    color: #83888F;
+}
+
+.subscribe-page-left-line {
+    width: 100%;
+    height: 1px;
+    background-color: #83888F;
+}
+
+
+.subscribe-page-right {
+    height: auto;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    gap: 50px;
+}
+
+.subscribe-page-right-catalog {
+    display: flex;
+    width: 750px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 88px;
+
+}
+
+.catalog-text {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    color: #83888F;
+    font-family: "Fraunces", serif;
+}
+
+.subscribe-page-right-order {
+    width: 750px;
+    height: 208px;
+    background-color: #333D4B;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+}
+
+.order-header {
+    opacity: 50%;
+    color: #FFF;
+    line-height: 26px;
+    text-transform: uppercase;
+    align-items: start;
+}
+
+.orderheaderplacement {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 554px;
+}
+
+.order-details {
+    color: #FFF;
+    font-family: "Fraunces 9pt";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+    width: 554px;
+}
+
+#coffecup {
+    color: #0E8784;
+    font-family: "Fraunces 9pt";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+#typeofcoffe {
+    color: #0E8784;
+    font-family: "Fraunces 9pt";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+#typeofcoffe {
+    color: #0E8784;
+font-family: "Fraunces 9pt";
+font-size: 27px;
+font-style: normal;
+font-weight: 900;
+line-height: 40px;
+}
+
+#sizeofcoffe {
+    color: #0E8784;
+    font-family: "Fraunces 9pt";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+#grinded {
+display: none;
+}
+
+#typeofgrind {
+    color: #0E8784;
+    font-family: "Fraunces 9pt";
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+#deliveramount {
+    color: #0E8784;
+    font-family: "Fraunces 9pt";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+
+
+.order-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 217px;
+    height: 56px;
+    border-radius: 6px;
+    border: none;
+    background-color: #E2DEDB;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    font-family: "Fraunces", serif;
+    color: #FEFCF7;
+    pointer-events: none;
+}
+
+.subscribe-page3 {
+    width: 70vw;
+    height: 140vh;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 88px;
 }
