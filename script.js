@@ -54,3 +54,23 @@ document.getElementById("createplanbutton1").addEventListener("click", function(
     e.preventDefault();
     document.getElementById("Shape").style.fill = "#FEFCF7";
  })
+
+
+ document.addEventListener("DOMContentLoaded", function () {
+    const catalogSections = document.querySelectorAll(".subscribe-page-right-catalog");
+
+    catalogSections.forEach(function (catalog) {
+        catalog.addEventListener("click", function () {
+            const options = catalog.nextElementSibling; 
+            const arrow = catalog.querySelector(".catalog-arrow");
+
+            options.classList.toggle("active");
+            arrow.classList.toggle("active");
+
+            const cups = options.querySelectorAll(".cups");
+            cups.forEach(function (cup) {
+                cup.classList.toggle("active");
+            });
+        });
+    });
+});

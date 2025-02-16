@@ -45,16 +45,33 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 15px;
-    /* 125% */
     letter-spacing: 0.923px;
     text-transform: uppercase;
-    transition: color 0.3s ease, 0.3s ease;
+    transition: color 0.3s ease, 0.3s ease-out;
+}
+
+.hacplan {
+    color: black;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, 0.3s ease-out;
+}
+
+.hacplan:hover {
+    transform: scale(1.1);
+    color: black;
+    cursor: pointer;
 }
 
 .hacp:hover {
     transform: scale(1.1);
     color: black;
     cursor: pointer;
+    opacity: 70%;
 }
 
 #createyourplan1 {
@@ -218,22 +235,21 @@ body {
     background-color: #2C343E;
 }
 
-.footerimg {
+.footer-image {
     color: #FEFCF7;
     display: flex;
     align-items: flex-start;
     padding-right: 7%;
 }
 
-.footertxts {
+.footer-texts {
     display: flex;
     width: 282px;
     justify-content: space-between;
 }
 
-.footertxt {
+.footer-text1 {
     color: #83888F;
-    font-family: Barlow;
     font-size: 12px;
     text-decoration: none;
     font-weight: 700;
@@ -241,36 +257,36 @@ body {
     letter-spacing: 0.923px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: color 0.3s ease, 0.3s ease-out;
 }
 
-.footertxt:hover {
+.footer-text1:hover {
     color: #FEFCF7;
     transform: scale(1.1);
-    cursor: pointer;
-    transition: color 0.3s ease, 0.3s ease;
 }
 
-.footericon {
+.footer-icon {
     padding-left: 35%;
     display: flex;
     align-items: flex-end;
+    gap: 24px;
     cursor: pointer;
 }
 
 @media only screen and (min-width: 1470px) {
-    .footericon {
+    .footer-icon {
         padding-left: 40%;
     }
 }
 
 @media only screen and (max-width: 1300px) {
-    .footericon {
+    .footer-icon {
         padding-left: 20%;
     }
 }
 
 @media only screen and (max-width: 1175px) {
-    .footericon {
+    .footer-icon {
         padding-left: 15%;
     }
 
@@ -280,14 +296,56 @@ body {
 }
 
 @media only screen and (max-width: 1135px) {
-    .footericon {
+    .footer-icon {
         padding-left: 10%;
     }
+
+
 }
 
 @media only screen and (max-width: 1065px) {
-    .footericon {
+    .footer-icon {
         padding-left: 8%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footer {
+        padding-top: 54px;
+        padding-bottom: 54px;
+        flex-direction: column;
+        height: 270px;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    .footer-image {
+        padding-right: 0%;
+    }
+
+    .footer-icon {
+        padding-left: 0%;
+        padding-right: 0px;
+    }
+
+    .footer-texts {
+        padding-right: 0%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        height: 347px;
+    }
+
+    .footer-texts {
+        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-icon {
+        padding-right: 0px;
     }
 }
 
@@ -296,9 +354,12 @@ body {
     transition: fill 0.3s ease;
 }
 
+.headerpic {
+    transition: color 0.3s ease, 0.3s ease-out;
+}
+
 .headerpic:hover {
     transform: scale(1.05);
-    transition: color 0.3s ease, 0.3s ease;
     cursor: pointer;
 }
 
@@ -308,7 +369,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 88px;
 }
 
 .subscribe-page-left-text {
@@ -317,6 +377,8 @@ body {
     line-height: 32px;
     font-family: "Fraunces", serif;
     color: #83888F;
+    display: flex;
+    gap: 28.5px;
 }
 
 .subscribe-page-left-line {
@@ -336,13 +398,22 @@ body {
     gap: 50px;
 }
 
+.subscribe-page-right {
+    height: auto;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 50px;
+}
+
 .subscribe-page-right-catalog {
     display: flex;
     width: 750px;
     justify-content: space-between;
     align-items: center;
-    padding-top: 88px;
-
+    cursor: pointer;
 }
 
 .catalog-text {
@@ -353,6 +424,70 @@ body {
     font-family: "Fraunces", serif;
 }
 
+.catalog-arrow {
+    transition: transform 0.3s ease-in-out;
+}
+
+.options1 {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: flex;
+    gap: 38px;
+    transform: translateY(-20px); /* Initial position */
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.optionheader {
+    color: #333D4B;
+    font-family: "Fraunces", serif;
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 32px;
+}
+
+.optioninfo {
+    color: #333D4B;
+    line-height: 26px;
+    width: 172px;
+}
+
+.cups {
+    width: 228px;
+    min-height: 250px;
+    border-radius: 8px;
+    background-color: #F4F1EB;
+    opacity: 0;
+    transform: translateY(-100px);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left: 30px;
+    gap: 24px;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.cups:hover {
+    background-color: #FDD6BA;
+    transform: scale(1.02);
+}
+
+.options1.active {
+    max-height: 250px;
+    justify-content: space-between;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cups.active {
+    opacity: 1;
+    transform: translateY(0); 
+}
+
+.catalog-arrow.active {
+    transform: rotate(180deg);
+}
 .subscribe-page-right-order {
     width: 750px;
     height: 208px;
@@ -410,11 +545,11 @@ body {
 
 #typeofcoffe {
     color: #0E8784;
-font-family: "Fraunces 9pt";
-font-size: 27px;
-font-style: normal;
-font-weight: 900;
-line-height: 40px;
+    font-family: "Fraunces 9pt";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 40px;
 }
 
 #sizeofcoffe {
@@ -426,9 +561,6 @@ line-height: 40px;
     line-height: 40px;
 }
 
-#grinded {
-display: none;
-}
 
 #typeofgrind {
     color: #0E8784;
@@ -468,9 +600,10 @@ display: none;
 
 .subscribe-page3 {
     width: 70vw;
-    height: 140vh;
+    height: auto;
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 88px;
+    padding-top: 88px;
 }
