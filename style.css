@@ -115,6 +115,8 @@ body {
 }
 
 .home-page-page1-picture-button:hover {
+    transform: scale(1.1);
+    transition:  ease-in-out;
     background: #66D2CF;
     cursor: pointer;
 }
@@ -613,6 +615,8 @@ body {
 
 .button:hover {
     background: #66D2CF;
+    transform: scale(1.1);
+    transition: color 0.3s  ease-in-out, 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -676,14 +680,14 @@ body {
 .footer-text1:hover {
     color: #FEFCF7;
     transform: scale(1.1);
-    cursor: pointer;
-    transition: color 0.3s ease, 0.3s ease;
+    transition: color 0.3s  ease-in-out, 0.3s ease-in-out;
 }
 
 .footer-icon {
     padding-left: 35%;
     display: flex;
     align-items: flex-end;
+    gap: 24px; 
     cursor: pointer;
 }
 
@@ -721,10 +725,7 @@ body {
     }
 }
 
-.logos:hover {
-    fill: #FDD6BA;
-    transition: fill 0.3s ease;
-}
+
 @media only screen and (max-width: 1024px) {
     .page3-background {
         height: 573px;
@@ -796,6 +797,9 @@ body {
         height: 270px;
         padding-right: 0%;
         padding-left: 0%;
+    }
+    .footer-image{
+        padding-right: 0%;
     }
     .footer-icon{
         padding-left: 0%;
@@ -908,10 +912,7 @@ body {
         padding-right: 0px;
     }
 }
-.logos:hover {
-    fill: #FDD6BA;
-    transition: fill 0.3s ease;
-}
+
 
 .headerpic:hover {
     transform: scale(1.05);
