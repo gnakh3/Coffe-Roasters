@@ -31,8 +31,6 @@ body {
     align-items: center;
     width: 92vw;
     height: 10vh;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .righttopp {
@@ -58,6 +56,11 @@ body {
     color: black;
     cursor: pointer;
 }
+
+#createyourplan1 {
+    color: black;
+}
+
 
 .secondpartp {
     width: 92vw;
