@@ -45,12 +45,29 @@ body {
     line-height: 15px;
     letter-spacing: 0.9230769276618958px;
     color: #83888F;
-    transition: color 0.3s ease, 0.3s ease;
+    transition: color 0.3s ease, 0.3s ease-out;
+}
+
+.home-page-header-text-home {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.9230769276618958px;
+    color: black;
+    transition: color 0.3s ease, 0.3s ease-out;
+}
+
+
+.home-page-header-text-home:hover {
+    transform: scale(1.1);
+    color: black;
+    cursor: pointer;
 }
 
 .home-page-header-text:hover {
     transform: scale(1.1);
     color: black;
+    opacity: 70%;
     cursor: pointer;
 }
 
@@ -116,11 +133,11 @@ body {
     border-radius: 8px;
     font-family: "Fraunces", serif;
     border: none;
+    transition: color 0.3s ease, 0.3s ease-out;
 }
 
 .home-page-page1-picture-button:hover {
     transform: scale(1.1);
-    transition:  ease-in-out;
     background: #66D2CF;
     cursor: pointer;
 }
@@ -628,12 +645,12 @@ body {
     line-height: 25px;
     border: none;
     cursor: pointer;
+    transition: color 0.3s ease, 0.3s ease-out;
 }
 
 .button:hover {
     background: #66D2CF;
     transform: scale(1.1);
-    transition: color 0.3s  ease-in-out, 0.3s ease-in-out;
 }
 
 @media only screen and (max-width: 1250px) {
@@ -692,12 +709,12 @@ body {
     letter-spacing: 0.923px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: color 0.3s ease, 0.3s ease-out;
 }
 
 .footer-text1:hover {
     color: #FEFCF7;
     transform: scale(1.1);
-    transition: color 0.3s  ease-in-out, 0.3s ease-in-out;
 }
 
 .footer-icon {
@@ -930,9 +947,11 @@ body {
     }
 }
 
+.headerpic {
+    transition: color 0.3s ease, 0.3s ease-out;
+}
 
 .headerpic:hover {
     transform: scale(1.05);
-    transition: color 0.3s ease, 0.3s ease;
     cursor: pointer;
 }

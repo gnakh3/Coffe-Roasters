@@ -38,16 +38,34 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 15px;
-    /* 125% */
     letter-spacing: 0.923px;
     text-transform: uppercase;
-    transition: color 0.3s ease, 0.3s ease;
+    transition: color 0.3s ease, 0.3s ease-out;
+}
+
+.hacabout {
+    color: black;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.923px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, 0.3s ease-out;
+
+}
+
+.hacabout:hover {
+    transform: scale(1.1);
+    color: black;
+    cursor: pointer;
 }
 
 .hac:hover {
     transform: scale(1.1);
     color: black;
     cursor: pointer;
+    opacity: 70%;
 }
 
 #aboutus1 {
@@ -144,9 +162,12 @@ body {
     margin-top: 32px;
 }
 
+.headerpic {
+    transition: color 0.3s ease, 0.3s ease-out;
+}
+
 .headerpic:hover {
     transform: scale(1.05);
-    transition: color 0.3s ease, 0.3s ease;
     cursor: pointer;
 }
 
@@ -288,12 +309,12 @@ body {
     letter-spacing: 0.923px;
     text-transform: uppercase;
     cursor: pointer;
+    transition: color 0.3s ease, 0.3s ease-out;
 }
 
 .footer-text1:hover {
     color: #FEFCF7;
     transform: scale(1.1);
-    transition: color 0.3s ease-in-out, 0.3s ease-in-out;
 }
 
 .footer-icon {
@@ -425,17 +446,11 @@ body {
 
 }
 
-
 .logos:hover {
     fill: #FDD6BA;
     transition: fill 0.3s ease;
 }
 
-.headerpic:hover {
-    transform: scale(1.05);
-    transition: color 0.3s ease, 0.3s ease;
-    cursor: pointer;
-}
 
 @media (max-width: 1024px) {
     .footer {
@@ -499,12 +514,12 @@ body {
     }
 
     .aboutus-page3-text2 {
-       width: 279px;
+        width: 279px;
     }
 
 
     .aboutus-page3img {
         bottom: 400px;
     }
-    
+
 }
