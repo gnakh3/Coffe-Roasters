@@ -268,6 +268,7 @@ body {
         width: 30px;
         height: 30px;
         position: relative;
+        z-index: 10;
     }
     
     .hamburger .bar {
@@ -363,7 +364,7 @@ body {
         width: 120px;
         opacity: 0;
         background-color: #FEFCF7;
-        transform: translateX(100px); 
+        transform: translateY(-250px); 
         transition: opacity 0.6s ease, transform 0.6s ease; 
     }
 
@@ -420,12 +421,12 @@ body {
     .home-page-2-box {
         width: 250px;
         flex-direction: column;
-        height: 400px;
+        height: 500px;
     }
 
     .home-page-page2 {
-        height: 1550px;
-        padding-top: 50px;
+        min-height: 1650px;
+        padding-top: 150px;
     }
     
     .home-page-4-box-svg {
