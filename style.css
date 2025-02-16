@@ -54,6 +54,10 @@ body {
     cursor: pointer;
 }
 
+#home1 {
+    color: black;
+}
+
 .home-page-page1 {
     width: 92vw;
     height: 85vh;
@@ -352,12 +356,20 @@ body {
         justify-content: center;
         padding-left: 5px;
         position: absolute;
-        right: 10px;
-        top: 80px;
+        right: 0px;
+        top: 62px;
         border-radius: 10px;
-        height: 150px;
+        height: 175px;
         width: 120px;
+        opacity: 0;
         background-color: #FEFCF7;
+        transform: translateX(100px); 
+        transition: opacity 0.6s ease, transform 0.6s ease; 
+    }
+
+    #checkbox4:checked ~ .home-page-header-pages {
+        opacity: 1;
+        transform: translateX(0);
     }
 
 
@@ -412,7 +424,8 @@ body {
     }
 
     .home-page-page2 {
-        height: 1500px;
+        height: 1550px;
+        padding-top: 50px;
     }
     
     .home-page-4-box-svg {
