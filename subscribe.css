@@ -683,6 +683,10 @@ body {
     cursor: pointer;
 }
 
+.price1 {
+    visibility: hidden;
+}
+
 .closing {
     display: flex;
     width: 428px;
@@ -850,43 +854,24 @@ body {
 
     .alertheader {
         width: 327px;
-        height: 206px;
-        color: #FFF;
-        font-family: "Fraunces", serif;
-        font-size: 40px;
-        font-weight: 900;
-        line-height: 48px;
-        background-color: #333D4B;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        padding-left: 50px;
+        height: 88px;
+        font-size: 28px;
+        padding-left: 24px;
     }
 
     .alert-details {
-        color: #83888F;
-        font-family: "Fraunces", serif;
         font-size: 24px;
-        font-weight: 900;
-        line-height: 40px;
-        width: 307px;
+        width: 279px;
     }
 
     .alert-details span {
-        color: #0E8784;
-        font-family: "Fraunces", serif;
         font-size: 24px;
-        font-weight: 900;
-        line-height: 40px;
     }
 
 
     .alert-content {
-        background-color: #FEFCF7;
         width: 327px;
         height: 597px;
-        text-align: center;
-        gap: 32px;
     }
 
     .alert .close-alert {
@@ -894,23 +879,20 @@ body {
         border: none;
         cursor: pointer;
         width: 279px;
-        height: auto;
+        height: 56px;
         border-radius: 6px;
         color: #FEFCF7;
         text-align: center;
         font-family: "Fraunces", serif;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 900;
         line-height: 25px;
         transition: color 0.3s ease, 0.3s ease-out;
     }
 
-    .price {
-        color: #333D4B;
-        font-family: "Fraunces", serif;
-        font-size: 32px;
-        font-weight: 900;
-        line-height: 36px;
+
+    .price1 {
+        visibility: visible;
     }
 
     .alert .close-alert:hover {
@@ -928,10 +910,8 @@ body {
     }
 
     .confirmation {
-        color: #333D4B;
-        line-height: 26px;
-        opacity: 80%;
-        width: 428px;
+        width: 279px;
+        font-size: 15px;
     }
 
     .bodyalert {
@@ -940,9 +920,13 @@ body {
         align-items: center;
         flex-direction: column;
         text-align: start;
-        height: 70%;
+        height: 80%;
+        padding-top: 15px;
     }
 
+    .price {
+        display: none;
+    }
 
 
 }

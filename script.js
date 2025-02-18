@@ -500,6 +500,7 @@ let deliveryAmount = "Weekly";
 let price = calculatePrice(coffeeType, size, grindType, deliveryAmount);
 
 document.querySelector('.price').innerHTML = `$${price}/ mo`;
+document.querySelector('.price1').innerHTML = `$${price}/ mo`;
 
 document.getElementById('alert-coffecup').textContent = coffeeType;
 document.getElementById('alert-typeofcoffe').textContent = "Arabica";
