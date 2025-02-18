@@ -309,14 +309,19 @@ body {
     letter-spacing: 0.923px;
     text-transform: uppercase;
     cursor: pointer;
-    transition: color 0.3s ease, 0.3s ease-out;
+    
 }
 
 .footer-text1:hover {
     color: #FEFCF7;
     transform: scale(1.1);
+    transition:  0.3s ease-out;
 }
-
+#footer-aboutus{
+    color: #FEFCF7;
+    transform: scale(1.1);   
+    transition:  0.3s ease-out;
+}
 .footer-icon {
     padding-left: 35%;
     display: flex;
