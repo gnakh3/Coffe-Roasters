@@ -672,6 +672,10 @@ body {
     font-weight: 900;
     line-height: 25px;
     transition: color 0.3s ease, 0.3s ease-out;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
 }
 
 .price {
@@ -689,7 +693,7 @@ body {
 }
 
 .price1 {
-    visibility: hidden;
+    display: none;
 }
 
 .closing {
@@ -897,7 +901,7 @@ body {
 
 
     .price1 {
-        visibility: visible;
+        display: flex;
     }
 
     .alert .close-alert:hover {
@@ -931,6 +935,10 @@ body {
 
     .price {
         display: none;
+    }
+
+    .alert {
+        height: 200vh;
     }
 
 

@@ -309,16 +309,23 @@ document.getElementById("amount3").addEventListener("click", function () {
 checkSelections();
 
 function saveOrder() {
+
+    let orders = JSON.parse(localStorage.getItem("orders")) || [];
+
     const order = {
         coffecup: coffecup.textContent,
         typeofcoffe: typeofcoffe.textContent,
         sizeofcoffe: sizeofcoffe.textContent,
         typeofgrind: typeofgrind.textContent,
-        deliveramount: deliveramount.textContent
+        deliveramount: deliveramount.textContent,
+        timestamp: new Date().toISOString() 
     };
 
-    localStorage.setItem('order', JSON.stringify(order));
+    orders.push(order);
+
+    localStorage.setItem("orders", JSON.stringify(orders));
 }
+
 
 
 cup1.addEventListener("click", function () {
@@ -479,41 +486,56 @@ confirmButton.addEventListener('click', function (event) {
 
 closeButton.addEventListener('click', closeAlert);
 
+let priceElement = document.querySelector(".price");
+let priceElement1 = document.querySelector(".price1");
 
-function calculatePrice(coffeeType, size, grindType, deliveryAmount) {
+function clearSelection(parent) {
+    let siblings = parent.querySelectorAll(".cups");
+    siblings.forEach((sibling) => {
+        sibling.style.backgroundColor = "";
+    });
+}
+
+function calculatePrice() {
     let basePrice = 14.00; 
-    
-    if (coffeeType === "Premium") {
-        basePrice += 5.00;
-    }
-    
-    if (size === "Large") {
-        basePrice += 2.00;
-    }
-    
-    if (grindType === "Fine") {
-        basePrice += 1.50;
-    }
-    
-    if (deliveryAmount === "Weekly") {
-        basePrice += 3.00;
-    }
-    
+
+    let coffeeType = typeofcoffe.textContent;
+    if (coffeeType === "Single Origin") basePrice += 5.00;
+    if (coffeeType === "Decaf") basePrice += 3.00;
+    if (coffeeType === "Blended") basePrice += 2.50;
+
+    let size = sizeofcoffe.textContent;
+    if (size === "500g") basePrice += 5.00;
+    if (size === "1000g") basePrice += 10.00;
+
+
+    let delivery = deliveramount.textContent;
+    if (delivery === "Every week") basePrice += 7.20;
+    if (delivery === "Every 2 weeks") basePrice += 9.60;
+    if (delivery === "Every month") basePrice += 12.00;
+
     return basePrice.toFixed(2);
 }
 
-let coffeeType = "Premium"; 
-let size = "Large"; 
-let grindType = "Fine";
-let deliveryAmount = "Weekly"; 
+function updateOrderDetails() {
+    let price = calculatePrice();
+    
+    if (priceElement) priceElement.innerHTML = `$${price}/ mo`;
+    if (priceElement1) priceElement1.innerHTML = `$${price}/ mo`;
+}
 
-let price = calculatePrice(coffeeType, size, grindType, deliveryAmount);
+document.querySelectorAll(".cups").forEach(cup => {
+    cup.addEventListener("click", function () {
+        clearSelection(cup.parentElement);
+        cup.style.backgroundColor = "#0E8784";
 
-document.querySelector('.price').innerHTML = `$${price}/ mo`;
-document.querySelector('.price1').innerHTML = `$${price}/ mo`;
+        if (cup.id.includes("type")) typeofcoffe.textContent = cup.querySelector(".optionheader").textContent;
+        if (cup.id.includes("size")) sizeofcoffe.textContent = cup.querySelector(".optionheader").textContent;
+        if (cup.id.includes("grind")) typeofgrind.textContent = cup.querySelector(".optionheader").textContent;
+        if (cup.id.includes("amount")) deliveramount.textContent = cup.querySelector(".optionheader").textContent;
 
-document.getElementById('alert-coffecup').textContent = coffeeType;
-document.getElementById('alert-typeofcoffe').textContent = "Arabica";
-document.getElementById('alert-sizeofcoffe').textContent = size;
-document.getElementById('alert-typeofgrind').textContent = grindType;
-document.getElementById('alert-deliveramount').textContent = deliveryAmount
+        updateOrderDetails();
+    });
+});
+
+updateOrderDetails();
