@@ -9,7 +9,17 @@ document.getElementById("aboutus").addEventListener("click", function () {
 document.getElementById("createyourplan").addEventListener("click", function () {
     window.location.href = "subscribe.html";
 });
+document.getElementById("footer-home").addEventListener("click", function () {
+    window.location.href = "index.html";
+});
 
+document.getElementById("footer-aboutus").addEventListener("click", function () {
+    window.location.href = "aboutus.html";
+});
+
+document.getElementById("footer-createyourplan").addEventListener("click", function () {
+    window.location.href = "subscribe.html";
+});
 
 document.querySelectorAll(".headerpic").forEach(element => {
     element.addEventListener("click", function () {
