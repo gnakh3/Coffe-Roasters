@@ -705,7 +705,53 @@ body {
         gap: 3%;
     }
 }
-
+.calculator{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+#calculator{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#euro{
+    width: 200px;
+    height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+#gel{
+    width: 200px;
+    height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+#dollar{
+    width: 200px;
+    height: 56px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+}
+#euro-button{
+    width: 150px;
+}
+#gel-button{
+    width: 150px;
+}
+#dollar-button{
+    width: 150px;
+}
 .footer {
     width: 92vw;
     padding-top: 50px;
