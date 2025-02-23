@@ -539,4 +539,3 @@ document.querySelectorAll(".cups").forEach(cup => {
 });
 
 updateOrderDetails();
-
