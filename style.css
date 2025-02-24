@@ -729,7 +729,7 @@ body {
 
 .footer-texts {
     display: flex;
-    width: 320px;
+    width: 420px;
     justify-content: space-between;
 }
 
@@ -768,6 +768,17 @@ body {
     .footer-icon {
         padding-left: 30%;
     }
+
+    .footer-texts {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .footer-texts {
+        min-width: 350px;
+        justify-content: space-between;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -800,6 +811,7 @@ body {
 
 
 @media only screen and (max-width: 1024px) {
+   
     .page3-background {
         height: 573px;
         padding-top: 50px;
@@ -891,7 +903,7 @@ body {
     }
 
     .footer-icon {
-        padding-left: 0%;
+        padding-left: 4%;
         padding-right: 54px;
     }
 }
@@ -1015,6 +1027,7 @@ body {
 
     .footer-icon {
         padding-right: 0px;
+        padding-left: 0px;
     }
 }
 

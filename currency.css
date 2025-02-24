@@ -51,12 +51,13 @@ body {
     transition: color 0.3s ease, 0.3s ease-out;
 }
 
+
 .home-page-header-text-home {
     font-size: 12px;
     font-weight: 700;
     line-height: 15px;
     letter-spacing: 0.9230769276618958px;
-    color: black;
+    color: #83888F;
     transition: color 0.3s ease, 0.3s ease-out;
 }
 
@@ -70,11 +71,10 @@ body {
 .home-page-header-text:hover {
     transform: scale(1.1);
     color: black;
-    opacity: 70%;
     cursor: pointer;
 }
 
-#home1 {
+#currency {
     color: black;
 }
 
@@ -389,7 +389,7 @@ body {
 
 .footer-texts {
     display: flex;
-    width: 320px;
+    width: 420px;
     justify-content: space-between;
 }
 
@@ -427,6 +427,17 @@ body {
 @media only screen and (min-width: 1470px) {
     .footer-icon {
         padding-left: 30%;
+    }
+
+    .footer-texts {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .footer-texts {
+        min-width: 350px;
+        justify-content: space-between;
     }
 }
 
