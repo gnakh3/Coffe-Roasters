@@ -77,6 +77,51 @@ body {
 #home1 {
     color: black;
 }
+
+.mainpic {
+    height: 70vh;
+}
+
+.main1 {
+    font-size: 70px;
+    font-weight: 900;
+    line-height: 72px;
+    text-align: center;
+    font-family: "Fraunces", serif;
+    color: #83888F;
+    position: relative;
+    width: 1111px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main2 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 32px;
+    text-align: center;
+    color: #83888F;
+    opacity: 60%;
+    padding-top: 20px;
+    width: 700px;
+}
+
+.maintext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media (max-width: 730px) {
 
     .visuallyHidden {
@@ -211,7 +256,7 @@ body {
         position: absolute;
         top: 350px;
     }
-      
+
     .home-page-header-text {
         font-size: 24px;
         font-weight: 900;
@@ -220,7 +265,7 @@ body {
         opacity: 70%;
         font-family: "Fraunces", serif;
     }
-    
+
     .home-page-header-text-home {
         font-size: 24px;
         font-weight: 900;
@@ -244,7 +289,8 @@ body {
     }
 
 }
-.calculator{
+
+.calculator {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -253,7 +299,8 @@ body {
     gap: 10px;
     flex-wrap: wrap;
 }
-#calculator{
+
+#calculator {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -261,34 +308,40 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
-#euro{
+
+#euro {
     width: 200px;
     height: 56px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
 }
-#gel{
+
+#gel {
     width: 200px;
     height: 56px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
 }
-#dollar{
+
+#dollar {
     width: 200px;
     height: 56px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 10px;
 }
-#euro-button{
+
+#euro-button {
     width: 150px;
 }
-#gel-button{
+
+#gel-button {
     width: 150px;
 }
-#dollar-button{
+
+#dollar-button {
     width: 150px;
 }
 
@@ -312,6 +365,7 @@ body {
     background: #66D2CF;
     transform: scale(1.1);
 }
+
 .footer {
     width: 92vw;
     padding-top: 50px;
@@ -403,7 +457,27 @@ body {
         padding-left: 8%;
     }
 }
+
+
+@media only screen and (max-width: 1197px) {
+    .mainpic {
+        height: 650px;
+        width: 70vw;
+    }
+    
+    .main1 {
+        font-size: 40px;
+        width: 700px;
+    }
+    
+    .main2 {
+        font-size: 18px;
+        width: 700px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
+    
     .footer {
         padding-top: 54px;
         padding-bottom: 54px;
@@ -422,7 +496,24 @@ body {
         padding-right: 54px;
     }
 }
+
 @media only screen and (max-width: 768px) {
+    
+    .mainpic {
+        height: 300px;
+    }
+    
+    .main1 {
+        font-size: 40px;
+        width: 60vw;
+        line-height: 40px;
+    }
+    
+    .main2 {
+        font-size: 15px;
+        width: 70vw;
+    }
+    
     .footer {
         height: 347px;
     }
@@ -436,4 +527,18 @@ body {
     .footer-icon {
         padding-right: 0px;
     }
+}
+
+
+@media only screen and (max-width: 600px) {
+     
+    .main1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    .main2 {
+        font-size: 14px;
+    }
+    
 }
