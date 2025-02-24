@@ -117,12 +117,6 @@ let sizeofcoffe = document.getElementById("sizeofcoffe");
 let typeofgrind = document.getElementById("typeofgrind");
 let deliveramount = document.getElementById("deliveramount");
 
-function clearSelection(parent) {
-    let siblings = parent.querySelectorAll(".cups");
-    siblings.forEach((sibling) => {
-        sibling.style.backgroundColor = "";
-    });
-}
 
 cup1.addEventListener("click", function () {
     clearSelection(cup1.parentElement);
@@ -314,23 +308,39 @@ document.getElementById("amount3").addEventListener("click", function () {
 
 checkSelections();
 
+document.querySelector('.close-alert').addEventListener('click', saveOrder);
+
 function saveOrder() {
+    const coffecup = document.getElementById("coffecup").textContent || "N/A";
+    const typeofcoffe = document.getElementById("typeofcoffe").textContent || "N/A";
+    const sizeofcoffe = document.getElementById("sizeofcoffe").textContent || "N/A";
+    const typeofgrind = document.getElementById("typeofgrind").textContent || "N/A";
+    const deliveramount = document.getElementById("deliveramount").textContent || "N/A";
 
-    let orders = JSON.parse(localStorage.getItem("orders")) || [];
+    if (coffecup !== "_____" && typeofcoffe !== "_____" && sizeofcoffe !== "_____" && typeofgrind !== "_____" && deliveramount !== "_____" ) {
+        const order = {
+            coffecup,
+            typeofcoffe,
+            sizeofcoffe,
+            typeofgrind,
+            deliveramount,
+            timestamp: new Date().toISOString()
+        };
 
-    const order = {
-        coffecup: coffecup.textContent,
-        typeofcoffe: typeofcoffe.textContent,
-        sizeofcoffe: sizeofcoffe.textContent,
-        typeofgrind: typeofgrind.textContent,
-        deliveramount: deliveramount.textContent,
-        timestamp: new Date().toISOString() 
-    };
+        let orders = JSON.parse(localStorage.getItem("orders")) || [];
 
-    orders.push(order);
+        orders.push(order);
 
-    localStorage.setItem("orders", JSON.stringify(orders));
+        localStorage.setItem("orders", JSON.stringify(orders));
+
+    } else {
+        console.log("Please complete all selections before saving the order.");
+    }
 }
+
+document.querySelector(".order-button").addEventListener("click", function() {
+    saveOrder();
+});
 
 
 
