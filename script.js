@@ -9,6 +9,9 @@ document.getElementById("aboutus").addEventListener("click", function () {
 document.getElementById("createyourplan").addEventListener("click", function () {
     window.location.href = "subscribe.html";
 });
+document.getElementById("currency").addEventListener("click", function () {
+    window.location.href = "currency.html";
+});
 document.getElementById("footer-home").addEventListener("click", function () {
     window.location.href = "index.html";
 });
@@ -19,6 +22,9 @@ document.getElementById("footer-aboutus").addEventListener("click", function () 
 
 document.getElementById("footer-createyourplan").addEventListener("click", function () {
     window.location.href = "subscribe.html";
+});
+document.getElementById("footer-currency").addEventListener("click", function () {
+    window.location.href = "currency.html";
 });
 
 document.querySelectorAll(".headerpic").forEach(element => {

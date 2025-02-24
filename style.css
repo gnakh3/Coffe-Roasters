@@ -263,7 +263,7 @@ body {
     }
 }
 
-@media (max-width: 665px) {
+@media (max-width: 730px) {
 
     .visuallyHidden {
         position: absolute;
@@ -729,7 +729,7 @@ body {
 
 .footer-texts {
     display: flex;
-    width: 282px;
+    width: 320px;
     justify-content: space-between;
 }
 
@@ -757,7 +757,7 @@ body {
 }
 
 .footer-icon {
-    padding-left: 35%;
+    padding-left: 30%;
     display: flex;
     align-items: flex-end;
     gap: 24px;
@@ -766,7 +766,7 @@ body {
 
 @media only screen and (min-width: 1470px) {
     .footer-icon {
-        padding-left: 40%;
+        padding-left: 30%;
     }
 }
 
