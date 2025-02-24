@@ -296,7 +296,7 @@ body {
 
 .footer-texts {
     display: flex;
-    width: 320px;
+    width: 420px;
     justify-content: space-between;
 }
 
@@ -333,6 +333,17 @@ body {
 @media only screen and (min-width: 1470px) {
     .footer-icon {
         padding-left: 30%;
+    }
+
+    .footer-texts {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .footer-texts {
+        min-width: 350px;
+        justify-content: space-between;
     }
 }
 
