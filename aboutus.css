@@ -528,3 +528,98 @@ body {
     }
 
 }
+
+@media (max-width: 665px) {
+    .righttop {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5px;
+        position: absolute;
+        right: 0px;
+        top: 62px;
+        border-radius: 10px;
+        height: 175px;
+        width: 120px;
+        opacity: 0;
+        background-color: #FEFCF7;
+        transform: translateY(-250px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .lefttop {
+        display: flex;
+    }
+
+    .secondpartpc {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 700px;
+        background-image: url(./images/Group\ 7\ \(2\).svg);
+    }
+
+    .texton {
+        align-items: center;
+        width: 279px;
+    }
+
+    .textontop {
+        font-size: 40px;
+        width: 279px;
+        font-weight: 900;
+        line-height: 40px;
+        color: #FEFCF7;
+    }
+
+    .textonbot {
+        font-size: 15px;
+        line-height: 25px;
+        width: 275px;
+    }
+
+    .page {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1175px) {
+    .thirdpart {
+        width: 80%;
+        height: 1500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pic {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .txt {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txttop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .txtbot {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*gigi es ori txt ar icentreba nervebi agar maqvs da ushvele <3 */
+}
