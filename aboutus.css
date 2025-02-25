@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    max-width: 99vw;
 }
 
 body {
@@ -13,64 +12,238 @@ body {
     padding-bottom: 50px;
 }
 
-.page {
+.aboutus-page {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
 }
 
-.top {
+
+.home-page-header {
     display: flex;
+    width: 92vw;
     justify-content: space-between;
     align-items: center;
-    width: 92vw;
     height: 10vh;
 }
 
-.righttop {
+.home-page-header-pages {
     display: flex;
-    align-items: center;
     gap: 32px;
 }
 
-.hac {
+#checkbox4 {
+    display: none;
+}
+
+.home-page-header-pic-mobile {
+    display: none;
+}
+
+.home-page-header-text {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0.9230769276618958px;
     color: #83888F;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 15px;
-    letter-spacing: 0.923px;
-    text-transform: uppercase;
     transition: color 0.3s ease, 0.3s ease-out;
 }
 
-.hacabout {
-    color: black;
+
+.home-page-header-text-about {
     font-size: 12px;
-    font-style: normal;
     font-weight: 700;
     line-height: 15px;
-    letter-spacing: 0.923px;
-    text-transform: uppercase;
+    letter-spacing: 0.9230769276618958px;
+    color: #83888F;
     transition: color 0.3s ease, 0.3s ease-out;
-
 }
 
-.hacabout:hover {
+
+.home-page-header-text-about:hover {
     transform: scale(1.1);
     color: black;
     cursor: pointer;
 }
 
-.hac:hover {
+.home-page-header-text:hover {
     transform: scale(1.1);
     color: black;
     cursor: pointer;
-    opacity: 70%;
 }
 
-#aboutus1 {
-    color: black;
+
+@media (max-width: 730px) {
+
+    .visuallyHidden {
+        position: absolute;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        width: 1px;
+        margin: -1px;
+        padding: 0;
+        border: 0;
+    }
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        margin: 0 auto;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .hamburger .bar {
+        padding: 0;
+        width: 30px;
+        height: 4px;
+        background-color: #333D4B;
+        display: block;
+        border-radius: 4px;
+        transition: all 0.4s ease-in-out;
+        position: absolute;
+    }
+
+    .bar1 {
+        top: 0;
+    }
+
+    .bar2,
+    .bar3 {
+        top: 13.5px;
+    }
+
+    .bar3 {
+        right: 0;
+    }
+
+    .bar4 {
+        bottom: 0;
+    }
+
+    .hamburger2 .bar2,
+    .hamburger3 .bar3,
+    .hamburger4 .bar4 {
+        top: 13.5px;
+    }
+
+    .hamburger4 .bar5 {
+        bottom: 0px;
+    }
+
+    .hamburger4 .bar {
+        transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+    }
+
+    .hamburger4 .bar2 {
+        width: 1px;
+        transform: rotate(90deg);
+        left: 13.5px;
+    }
+
+    .hamburger4 .bar3 {
+        width: 1px;
+        left: 13.5px;
+
+    }
+
+    .checkbox4:checked+label>.hamburger4>.bar1 {
+        top: 13.5px;
+        background-color: transparent;
+    }
+
+    .checkbox4:checked+label>.hamburger4>.bar2 {
+        left: 0px;
+        width: 30px;
+        transform: rotate(45deg);
+    }
+
+    .checkbox4:checked+label>.hamburger4>.bar3 {
+        left: 0;
+        width: 30px;
+        transform: rotate(-45deg);
+    }
+
+    .checkbox4:checked+label>.hamburger4>.bar4 {
+        background-color: transparent;
+    }
+
+    .checkbox4:checked+label>.hamburger4>.bar5 {
+        bottom: 13.5px;
+        background-color: transparent;
+    }
+
+    .home-page-header-pages {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        position: absolute;
+        top: 62px;
+        border-radius: 10px;
+        height: 355px;
+        width: 100vw;
+        left: 0;
+        opacity: 0;
+        background-color: #FEFCF7;
+        transform: translateY(-850px);
+        transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+
+    .mobile-resp {
+        width: 100vw;
+        height: 150px;
+        background: linear-gradient(180deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+        z-index: 1000;
+        left: 0;
+        position: absolute;
+        top: 350px;
+    }
+
+    .home-page-header-text {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 32px;
+        color: black;
+        opacity: 70%;
+        font-family: "Fraunces", serif;
+    }
+
+    .home-page-header-text-about {
+        font-size: 24px;
+        font-weight: 900;
+        line-height: 24px;
+        color: black;
+        font-family: "Fraunces", serif;
+    }
+
+    #checkbox4:checked~.home-page-header-pages {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+
+    .home-page-header-pic {
+        display: none;
+    }
+
+    .home-page-header-pic-mobile {
+        display: flex;
+    }
+
 }
 
 .secondpart {
@@ -162,6 +335,131 @@ body {
     opacity: 0.8;
     margin-top: 32px;
 }
+
+
+@media (max-width: 1175px) {
+    .thirdpart {
+        width: 90vw;
+        height: 850px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .pic {
+        min-width: 300px;
+        min-height: 520px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .txt {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
+    }
+
+    .txttop {
+        font-size: 32px;
+        line-height: 40px;
+        padding-right: 60px;
+    }
+
+    .txtbot {
+        width: 339px;
+        padding-bottom: 75px;
+        font-size: 15px;
+
+    }
+
+}
+
+@media (max-width:790px) {
+    
+    .secondpart {
+        width: 92vw;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .secondpartpc {
+        width: 92vw;
+        height: 400px;
+        background-image: url(./images/aboutusresp.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .texton {
+        align-items: center;
+        flex-direction: column;
+        width: 279px;
+        height: 202px;
+        justify-content: center;
+        padding-right: 30px;
+        padding-left: 0px;
+        text-align: center;
+        padding-right: 100px;
+    }
+    
+    .textontop {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    
+    .textonbot {
+        color: #FEFCF7;
+        font-size: 15px;
+        line-height: 25px;
+        width: 279px;
+    }
+    
+    .thirdpart {
+        width: 90vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .pic {
+        min-width: 92vw;
+        min-height: 606px;
+        height: auto;
+    }
+
+    .txt {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        text-align: start;
+    }
+
+    .txttop {
+        width: 92vw;
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .txtbot {
+        width: 327px;
+        font-size: 15px;
+        text-align: center;
+    }
+
+
+}
+
+
 
 .headerpic {
     transition: color 0.3s ease, 0.3s ease-out;
@@ -310,19 +608,21 @@ body {
     letter-spacing: 0.923px;
     text-transform: uppercase;
     cursor: pointer;
-    
+
 }
 
 .footer-text1:hover {
     color: #FEFCF7;
     transform: scale(1.1);
-    transition:  0.3s ease-out;
+    transition: 0.3s ease-out;
 }
-#footer-aboutus{
+
+#footer-aboutus {
     color: #FEFCF7;
-    transform: scale(1.1);   
-    transition:  0.3s ease-out;
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
 }
+
 .footer-icon {
     padding-left: 30%;
     display: flex;
@@ -538,97 +838,3 @@ body {
 
 }
 
-@media (max-width: 665px) {
-    .righttop {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 5px;
-        position: absolute;
-        right: 0px;
-        top: 62px;
-        border-radius: 10px;
-        height: 175px;
-        width: 120px;
-        opacity: 0;
-        background-color: #FEFCF7;
-        transform: translateY(-250px);
-        transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    .lefttop {
-        display: flex;
-    }
-
-    .secondpartpc {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        height: 700px;
-        background-image: url(./images/Group\ 7\ \(2\).svg);
-    }
-
-    .texton {
-        align-items: center;
-        width: 279px;
-    }
-
-    .textontop {
-        font-size: 40px;
-        width: 279px;
-        font-weight: 900;
-        line-height: 40px;
-        color: #FEFCF7;
-    }
-
-    .textonbot {
-        font-size: 15px;
-        line-height: 25px;
-        width: 275px;
-    }
-
-    .page {
-        width: 70%;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-    }
-}
-
-@media (max-width: 1175px) {
-    .thirdpart {
-        width: 80%;
-        height: 1500px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .pic {
-        width: 100%;
-        height: auto;
-        margin-bottom: 30px;
-    }
-
-    .txt {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .txttop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .txtbot {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /*gigi es ori txt ar icentreba nervebi agar maqvs da ushvele <3 */
-}
