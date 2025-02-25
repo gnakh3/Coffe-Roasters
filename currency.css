@@ -348,7 +348,7 @@ body {
 }
 
 .button {
-    width: 217px;
+    width: 200px;
     height: 56px;
     border-radius: 6px;
     background: #0E8784;
@@ -365,7 +365,7 @@ body {
 
 .button:hover {
     background: #66D2CF;
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 
 .footer {
